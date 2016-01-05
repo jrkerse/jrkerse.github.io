@@ -9,21 +9,22 @@ url:
 
 # Owner/author information
 owner:
-  name:           Your Name
-  avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
+  name:           "[Cite Needed]"
+  # avatar:         avatar.jpg
+  # bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
+  email:         "hello@citeneeded.com"
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
-  stackexchange:  
-  linkedin:       
+  twitter:       jrkerse 
+  ycombinator:   "user?id=jrkerse"
+  # facebook:       
+  github:        jrkerse 
+  stackexchange: "users/7505772/jrkerse"
+  linkedin:      jrkerse 
   instagram:      
   flickr:         
   tumblr:         
   # google plus id, include the '+', eg +mmistakes
-  google_plus:    +yourid
+  # google_plus:    +yourid
 
 # Background image to be tiled on all pages
 background: 
@@ -41,6 +42,8 @@ highlighter: pygments
 markdown:    kramdown
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-gist
 sass:
   sass_dir: _sass
   style: compressed
@@ -56,7 +59,7 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: true
+  enable_coderay: true
 
   coderay:
     coderay_line_numbers: nil

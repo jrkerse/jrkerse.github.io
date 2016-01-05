@@ -13,8 +13,16 @@
 {% include navigation.html %}
 
 <div class="entry-header">
-  {% if page.image.credit %}<div class="image-credit">Image source: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></div><!-- /.image-credit -->{% endif %}
   {% if page.image.feature %}
+    <div class="image-credit">
+        Say hello:&nbsp
+        <a href="mailto:{{ site.owner.email }}" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a>&nbsp
+        <a href="https://github.com/{{ site.owner.github }}" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>&nbsp
+        <a href="https://twitter.com/{{ site.owner.twitter }}" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>&nbsp
+        <a href="https://www.linkedin.com/in/{{ site.owner.linkedin }}" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>&nbsp
+        <a href="https://www.stackexchange.com/{{ site.owner.stackexchange }}" target="_blank"><i class="fa fa-stack-exchange fa-2x"></i></a>&nbsp
+        <a href="https://news.ycombinator.com/{{ site.owner.ycombinator }}" target="_blank"><i class="fa fa-yc-square fa-2x"></i></a>&nbsp
+    </div>
     <div class="entry-image">
       <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
     </div><!-- /.entry-image -->
